@@ -1,7 +1,7 @@
 """Paint, for drawing shapes.
 Team 5
 Sergio Omar Olivero Macias A01023733
-Ivan .. A01
+Ivan David Manzano Hormaza A01029111
 Daniela Guadalupe Carrión Ortega A01781229
 
 Exercises
@@ -14,8 +14,10 @@ Exercises
 
 """
 
+import turtle
 from turtle import *
 from freegames import vector
+import numpy as np
 
 def line(start, end):
     "Draw line from start to end."
@@ -39,7 +41,16 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
+    r = np.sqrt((end.x - start.x)**2 + (end.y - start.y)**2) #Get the radius of the circle
+    
+    penup()
+    goto(start.x, start.y - r) #Make the pen go to the desired position
+    pendown()
+    begin_fill()
+
+    turtle.circle(r) #function from turtle to draw a circle
+    
+    end_fill()
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
