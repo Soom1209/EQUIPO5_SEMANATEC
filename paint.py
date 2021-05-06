@@ -14,8 +14,10 @@ Exercises
 
 """
 
+import turtle
 from turtle import *
 from freegames import vector
+import numpy as np
 
 def line(start, end):
     "Draw line from start to end."
@@ -39,7 +41,16 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
+    r = np.sqrt((end.x - start.x)**2 + (end.y - start.y)**2)
+    
+    penup()
+    goto(start.x, start.y - r)
+    pendown()
+    begin_fill()
+
+    turtle.circle(r)
+    
+    end_fill()
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
