@@ -1,8 +1,8 @@
 """Snake, classic arcade game.
 Equipo 5
 Sergio Omar Olivero Macias A1023733
-Ivan
-Daniela
+Ivan David Manzano A01029111
+Daniela Carrión A01781229
 
 """
 
