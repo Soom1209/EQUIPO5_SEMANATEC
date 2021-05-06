@@ -1,7 +1,7 @@
 """Paint, for drawing shapes.
 Team 5
 Sergio Omar Olivero Macias A01023733
-Ivan .. A01
+Ivan David Manzano A01029111
 Daniela.. A01
 
 Exercises
@@ -41,14 +41,14 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    r = np.sqrt((end.x - start.x)**2 + (end.y - start.y)**2)
+    r = np.sqrt((end.x - start.x)**2 + (end.y - start.y)**2) #Get the radius of the circle
     
     penup()
-    goto(start.x, start.y - r)
+    goto(start.x, start.y - r) #Make the pen go to the desired position
     pendown()
     begin_fill()
 
-    turtle.circle(r)
+    turtle.circle(r) #function from turtle to draw a circle
     
     end_fill()
 
