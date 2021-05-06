@@ -1,11 +1,8 @@
 """Snake, classic arcade game.
-
-Exercises
-
-1. How do you make the snake faster or slower?
-2. How can you make the snake go around the edges?
-3. How would you move the food?
-4. Change the snake to respond to arrow keys.
+Equipo 5
+Sergio Omar Olivero Macias A1023733
+Ivan
+Daniela
 
 """
 
@@ -30,7 +27,7 @@ def inside(head):
     return -200 < head.x < 190 and -200 < head.y < 190
 
 def move():
-    "Move snake forward one segment."
+    "Mov2snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
 
