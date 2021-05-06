@@ -2,7 +2,7 @@
 Team 5
 Sergio Omar Olivero Macias A01023733
 Ivan .. A01
-Daniela.. A01781229
+Daniela Guadalupe Carrión Ortega A01781229
 
 Exercises
 
@@ -42,9 +42,20 @@ def circle(start, end):
     pass  # TODO
 
 def rectangle(start, end):
-    "Draw rectangle from start to end."
-    pass  # TODO
-
+	"Draw rectangle from start to end."
+	up()
+	goto(start.x, start.y)
+    	begin_fill()
+   	goto(end.x, end.y)
+	begin_fill()
+	
+	for count range(2):
+	  forward(end.x - start.x)
+	  left(90)
+	  forward(end.y - 2* start.y)
+	  left(90)
+	end_fill()
+	
 def triangle(start, end):
     "Draw triangle from start to end."
     up()
