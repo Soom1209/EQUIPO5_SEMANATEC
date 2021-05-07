@@ -1,8 +1,8 @@
 """Paint, for drawing shapes.
 Team 5
 Sergio Omar Olivero Macias A01023733
-Ivan David Manzano A01029111
-Daniela.. A01
+Ivan David Manzano Hormaza A01029111
+Daniela Guadalupe Carrión Ortega A01781229
 
 Exercises
 
@@ -54,8 +54,20 @@ def circle(start, end):
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
-    pass  # TODO
+    
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
 
+    for count in range(2):
+        forward(end.x - start.x)
+        left(90)
+        forward(end.y - 2*start.y)
+        left(90)
+    
+    end_fill()
+	
 def triangle(start, end):
     "Draw triangle from start to end."
     up()
@@ -66,7 +78,6 @@ def triangle(start, end):
     for count in range(3):
         forward(end.x - start.x)
         left(120)
-
     end_fill()
 
 
