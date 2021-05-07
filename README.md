@@ -4,14 +4,15 @@ Description:
 
 Authors: 
  - Sergio Olivero A01023733
- - Daniela Carrión A010
+ - Daniela Carrión A0102781229
  - Ivan Manzano A
 
 Edited Codes: 
 
 -paint.py:
-	1.
-	2.
+	1. Circle method
+	2. Rectangle method
+	3. Triangle method
 
 -snake.py
 	1.
