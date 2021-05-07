@@ -19,8 +19,8 @@ Edited Codes:
 	2.
 
 -packman.py:
-	1.
-	2.
+	1. New Map Added 
+	2. Increased speed for ghosts and packman
 
 	
 	
